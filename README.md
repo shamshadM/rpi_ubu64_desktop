@@ -11,6 +11,9 @@ In this write up I will provide links used in the video as reference, please ref
 Setting up ubuntu to run on ssd
 https://www.raspberrypi.org/forums/viewtopic.php?t=278791
 
+### Wired network connect to Ubuntu 22.04
+[Configuring Static IPv4 Address on Ubuntu 22.04 Server with CLI](https://tecadmin.net/how-to-configure-static-ip-address-on-ubuntu-22-04/)
+
 ### gnome
 ```sh
 sudo apt install ubuntu-gnome-desktop ubuntu-gnome-default-settings
@@ -121,3 +124,8 @@ gsettings set org.gnome.desktop.privacy remember-app-usage false
 ```
 
 
+## Dual boot time settings so windows doesn't interfere
+### Disable the UTC use local time in Ubuntu
+
+timedatectl set-local-rtc 1 --adjust-system-clock
+timedatectl
